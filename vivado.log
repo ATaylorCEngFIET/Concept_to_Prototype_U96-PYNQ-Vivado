@@ -1,0 +1,549 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 30 09:15:57 2020
+# Process ID: 12600
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29064
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hdl_projects/display_port/display_port.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/Downloads/PYNQ-master/boards/ip'.
+WARNING: [IP_Flow 19-593] The IP 'Arm Cortex-M1 Processor', version 0.0, is no longer found in the user IP repository C:/Xilinx/Vivado/2019.2/data/ip. It will not be included in the IP Catalog. (It used to be found at c:/Xilinx/Vivado/2019.2/data/ip/partners/Arm/CM1DbgAXI.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Adiuvo_Engineering:hls:line_convert:1.0'. The one found in IP location 'c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0_2' will take precedence over the same IP in locations: 
+   c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0
+   c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0_1
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 1219.141 ; gain = 453.859
+update_compile_order -fileset sources_1
+open_bd_design {C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_100M
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_1
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_1: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:mipi_csi2_rx_subsystem:4.1 - mipi_csi2_rx_subsyst_0
+Adding component instance block -- xilinx.com:ip:v_demosaic:1.0 - v_demosaic_0
+Adding component instance block -- xilinx.com:ip:v_gamma_lut:1.0 - v_gamma_lut_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_2
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_2: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_3
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_3: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_1
+Adding component instance block -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack_0
+Adding component instance block -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /zynq_ultra_ps_e_0/dp_video_in_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_intc_0/irq(undef) and /zynq_ultra_ps_e_0/pl_ps_irq0(intr)
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_vdma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_vdma_0/Data_S2MM.
+Successfully read diagram <design_1> from BD file <C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/design_1.bd>
+WARNING: [BD 41-1731] Type mismatch between connected pins: /phy/system_rst_out(undef) and /system_rst_out(rst)
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2039.395 ; gain = 97.547
+delete_bd_objs [get_bd_intf_nets v_gamma_lut_0_m_axis_video]
+disconnect_bd_intf_net [get_bd_intf_net v_demosaic_0_m_axis_video] [get_bd_intf_pins v_gamma_lut_0/s_axis_video]
+connect_bd_intf_net [get_bd_intf_pins v_demosaic_0/m_axis_video] [get_bd_intf_pins pixel_pack_0/stream_in_24]
+save_bd_design
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_v_gamma_lut_0_0_synth_1
+reset_run design_1_v_demosaic_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_ps8_0_100M/peripheral_aresetn (synchronous to clock source /clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/v_gamma_lut_0/s_axis_video_TVALID
+
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx_subsyst_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_demosaic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_gamma_lut_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_pack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_unpack_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
+Exporting to file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = d932360852ecdd02; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = d932360852ecdd02; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = edb0e2ce0987a2ac; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = edb0e2ce0987a2ac; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 0c00bd97f305e293; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_demosaic_0_0, cache-ID = b2938137bdb4051d; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_gamma_lut_0_0, cache-ID = 34fb12e46d40079a; cache size = 201.110 MB.
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2039.395 ; gain = 0.000
+[Sat May 30 09:30:26 2020] Launched design_1_v_gamma_lut_0_0_synth_1, design_1_v_demosaic_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_gamma_lut_0_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_v_gamma_lut_0_0_synth_1/runme.log
+design_1_v_demosaic_0_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_v_demosaic_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/display_port/display_port.runs/synth_1/runme.log
+[Sat May 30 09:30:26 2020] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/display_port/display_port.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 2039.395 ; gain = 0.000
+reset_run synth_1
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_nets v_gamma_lut_0_interrupt] [get_bd_cells v_gamma_lut_0]
+save_bd_design
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_ps8_0_100M/peripheral_aresetn (synchronous to clock source /clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx_subsyst_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_demosaic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_pack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_unpack_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
+Exporting to file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = d932360852ecdd02; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = d932360852ecdd02; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = edb0e2ce0987a2ac; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = edb0e2ce0987a2ac; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 0c00bd97f305e293; cache size = 201.110 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_demosaic_0_0, cache-ID = b2938137bdb4051d; cache size = 201.110 MB.
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Sat May 30 09:34:47 2020] Launched design_1_xbar_0_synth_1, design_1_axi_intc_0_0_synth_1, design_1_v_demosaic_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_intc_0_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_axi_intc_0_0_synth_1/runme.log
+design_1_v_demosaic_0_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_v_demosaic_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/display_port/display_port.runs/synth_1/runme.log
+[Sat May 30 09:34:47 2020] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/display_port/display_port.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 2039.395 ; gain = 0.000
+delete_bd_objs [get_bd_intf_nets v_demosaic_0_m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_gamma_lut:1.0 v_gamma_lut_0
+endgroup
+set_property location {6 1630 611} [get_bd_cells v_gamma_lut_0]
+connect_bd_intf_net [get_bd_intf_pins v_gamma_lut_0/m_axis_video] [get_bd_intf_pins pixel_pack_0/stream_in_24]
+connect_bd_net [get_bd_pins xlconcat_0/In1] [get_bd_pins v_gamma_lut_0/interrupt]
+connect_bd_intf_net [get_bd_intf_pins v_gamma_lut_0/s_axis_video] [get_bd_intf_pins v_demosaic_0/m_axis_video]
+connect_bd_net [get_bd_pins v_gamma_lut_0/ap_clk] [get_bd_pins clk_wiz_1/clk_out2]
+connect_bd_net [get_bd_pins v_gamma_lut_0/ap_rst_n] [get_bd_pins rst_ps8_0_100M/peripheral_aresetn]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out2 (150 MHz)} Clk_slave {/clk_wiz_1/clk_out2 (150 MHz)} Clk_xbar {/clk_wiz_1/clk_out2 (150 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/v_gamma_lut_0/s_axi_CTRL} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins v_gamma_lut_0/s_axi_CTRL]
+Slave segment </v_gamma_lut_0/s_axi_CTRL/Reg> is being mapped into address space </zynq_ultra_ps_e_0/Data> at <0xA005_0000 [ 64K ]>
+endgroup
+startgroup
+set_property -dict [list CONFIG.MAX_COLS {2048} CONFIG.MAX_ROWS {1024}] [get_bd_cells v_gamma_lut_0]
+endgroup
+save_bd_design
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_ps8_0_100M/peripheral_aresetn (synchronous to clock source /clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx_subsyst_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_demosaic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_pack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_unpack_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_gamma_lut_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_gamma_lut_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
+Exporting to file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = d932360852ecdd02; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = d932360852ecdd02; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = edb0e2ce0987a2ac; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = edb0e2ce0987a2ac; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_intc_0_0, cache-ID = e458f723bca7ab66; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 0c00bd97f305e293; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_demosaic_0_0, cache-ID = b2938137bdb4051d; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_gamma_lut_0_0, cache-ID = 34fb12e46d40079a; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = fc8dcce219f77b88; cache size = 202.298 MB.
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+config_ip_cache: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2039.395 ; gain = 0.000
+[Sat May 30 10:36:59 2020] Launched design_1_v_demosaic_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_demosaic_0_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_v_demosaic_0_0_synth_1/runme.log
+synth_1: C:/hdl_projects/display_port/display_port.runs/synth_1/runme.log
+[Sat May 30 10:36:59 2020] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/display_port/display_port.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 2039.395 ; gain = 0.000
+delete_bd_objs [get_bd_intf_nets v_gamma_lut_0_m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_subset_converter:1.1 axis_subset_converter_2
+endgroup
+set_property location {5 1604 359} [get_bd_cells axis_subset_converter_2]
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_2/M_AXIS] [get_bd_intf_pins pixel_pack_0/stream_in_24]
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_2/S_AXIS] [get_bd_intf_pins v_gamma_lut_0/m_axis_video]
+connect_bd_net [get_bd_pins axis_subset_converter_2/aclk] [get_bd_pins clk_wiz_1/clk_out2]
+connect_bd_net [get_bd_pins axis_subset_converter_2/aresetn] [get_bd_pins rst_ps8_0_100M/peripheral_aresetn]
+regenerate_bd_layout
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_ps8_0_100M/peripheral_aresetn (synchronous to clock source /clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+validate_bd_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 2039.395 ; gain = 0.000
+delete_bd_objs [get_bd_nets v_gamma_lut_0_interrupt] [get_bd_intf_nets v_demosaic_0_m_axis_video] [get_bd_intf_nets v_gamma_lut_0_m_axis_video] [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_cells v_gamma_lut_0]
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_2/S_AXIS] [get_bd_intf_pins v_demosaic_0/m_axis_video]
+startgroup
+set_property -dict [list CONFIG.TDATA_REMAP {tdata[23:16],tdata[7:0],tdata[15:8]}] [get_bd_cells axis_subset_converter_2]
+endgroup
+save_bd_design
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1343] Reset pin /v_tc_0/resetn (associated clock /v_tc_0/clk) is connected to reset source /rst_ps8_0_100M/peripheral_aresetn (synchronous to clock source /clk_wiz_1/clk_out2).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clk_wiz_0/clk_out1.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
+Wrote  : <C:\hdl_projects\display_port\display_port.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/v_demosaic_0/s_axis_video_TDEST'(1) to net 'axis_subset_converter_1_M_AXIS_TDEST'(10) - Only lower order bits will be connected.
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/hw_handoff/design_1_mipi_csi2_rx_subsyst_0_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/synth/design_1_mipi_csi2_rx_subsyst_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mipi_csi2_rx_subsyst_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_demosaic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+Exporting to file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_pack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pixel_unpack_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s01_couplers/auto_pc .
+Exporting to file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/hdl_projects/display_port/display_port.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = d932360852ecdd02; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = d932360852ecdd02; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = edb0e2ce0987a2ac; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = edb0e2ce0987a2ac; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_intc_0_0, cache-ID = bdbf0b11c94b3d5a; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 0c00bd97f305e293; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_demosaic_0_0, cache-ID = b2938137bdb4051d; cache size = 202.298 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 48e104308cdad975; cache size = 202.298 MB.
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Sat May 30 11:07:43 2020] Launched design_1_v_demosaic_0_0_synth_1, design_1_axis_subset_converter_2_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_demosaic_0_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_v_demosaic_0_0_synth_1/runme.log
+design_1_axis_subset_converter_2_0_synth_1: C:/hdl_projects/display_port/display_port.runs/design_1_axis_subset_converter_2_0_synth_1/runme.log
+synth_1: C:/hdl_projects/display_port/display_port.runs/synth_1/runme.log
+[Sat May 30 11:07:43 2020] Launched impl_1...
+Run output will be captured here: C:/hdl_projects/display_port/display_port.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 2084.750 ; gain = 45.355
+archive_project C:/hdl_projects/display_port_pynq_overlay.xpr.zip -temp_dir C:/temp -force -exclude_run_results -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/temp' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/Downloads/PYNQ-master/boards/ip'.
+WARNING: [IP_Flow 19-593] The IP 'Arm Cortex-M1 Processor', version 0.0, is no longer found in the user IP repository C:/Xilinx/Vivado/2019.2/data/ip. It will not be included in the IP Catalog. (It used to be found at c:/Xilinx/Vivado/2019.2/data/ip/partners/Arm/CM1DbgAXI.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Adiuvo_Engineering:hls:line_convert:1.0'. The one found in IP location 'c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0_2' will take precedence over the same IP in locations: 
+   c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0
+   c:/Users/aptay/Downloads/PYNQ-master/boards/ip/Adiuvo_Engineering_hls_line_convert_1_0_1
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_axi4s_vid_out_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_rst_ps8_0_100M_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_clk_wiz_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_tc_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_zynq_ultra_ps_e_0_1_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_zynq_ultra_ps_e_0_1_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axi_vdma_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_clk_wiz_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axis_subset_converter_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_v_demosaic_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_mipi_csi2_rx_subsyst_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_1_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_1_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_d10d_vfb_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_d10d_vfb_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'bd_d10d_rx_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'bd_d10d_rx_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_ila_0_2_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axis_subset_converter_1_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_pixel_pack_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_pixel_pack_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_pixel_unpack_0_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_pixel_unpack_0_0_synth_1'...
+WARNING: [Coretcl 2-105] Run 'design_1_axis_subset_converter_2_0_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_2_0_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rst_ps8_0_100M_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_zynq_ultra_ps_e_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axi_vdma_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_demosaic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_mipi_csi2_rx_subsyst_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_d10d_vfb_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'bd_d10d_rx_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_ila_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_pixel_pack_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_pixel_unpack_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_axis_subset_converter_2_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_d10d_rx_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_d10d_rx_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'bd_d10d_vfb_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'bd_d10d_vfb_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axi_vdma_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axi_vdma_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axis_subset_converter_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axis_subset_converter_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axis_subset_converter_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axis_subset_converter_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_axis_subset_converter_2_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_axis_subset_converter_2_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_ila_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_ila_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_mipi_csi2_rx_subsyst_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_mipi_csi2_rx_subsyst_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_pixel_pack_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_pixel_pack_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_pixel_unpack_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_pixel_unpack_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rst_ps8_0_100M_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rst_ps8_0_100M_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_axi4s_vid_out_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_demosaic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_demosaic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_tc_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_zynq_ultra_ps_e_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_zynq_ultra_ps_e_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
